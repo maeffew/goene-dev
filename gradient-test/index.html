@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Color Wheel with Conical Gradient</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+				body {
+				background-color: #2E2F30;
+		}
+		.wrapper {
+		width: 80vw;
+		height:100vh;
+		overflow: hidden;
+		background-clip: content-box;
+		}
+		.section {
+			width:300vw;
+			height:300vh;
+			background-size: 300vw 300vh;
+			background: conic-gradient(#E2841D, #148250, #341E47, #B5144C, #3E3183, #E42421, #E2841D);
+			border: none;
+			background-blend-mode: screen;
+			position: absolute;
+			top: -100vh;
+			right: -100vw;
+			animation: spin 10s linear infinite;
+		}
+		.hero {
+			width: 80vw;
+			height: 100vh;
+			}
+			
+		
+
+		
+		@keyframes spin {
+	0% {
+		transform: rotate(0);
+	}
+
+
+	40% {
+		transform: rotate(20deg);
+	}
+	50% {
+		transform: rotate(00deg);
+	}
+		65% {
+		transform: rotate(10deg);
+	}
+	
+	80% {
+		transform: rotate(90deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+<div class="wrapper">
+<div class="section rotate" style="animation: spin 10s linear infinite;">
+<div class="hero">
+</div>
+</div>
+</div>
+  <script src='https://leaverou.github.io/conic-gradient/conic-gradient.js'></script>
+
+  
+
+</body>
+
+</html>
